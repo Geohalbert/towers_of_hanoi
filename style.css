@@ -1,0 +1,58 @@
+/*Data Stack Styling*/
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.towers {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  height: 400px;
+}
+h1 {
+  color: black;
+  text-align: center;
+}
+/*tower appearance*/
+[data-stack] {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  width: 60px;
+  background-color: aliceblue;
+  margin: 25px;
+  border-left: 50px solid;
+  border-right: 50px solid;
+  border-bottom: 10px solid;
+  border-color: aliceblue;
+}
+/*basic block appearance*/
+[data-block] {
+  height: 25px;
+  border: 2px solid;
+  border-radius: 5px;
+  border-color: black;
+  transform: rotateX(360deg);
+}
+
+[data-block="25"] {
+  width: 25px;
+  background-color: blue;
+}
+
+[data-block="50"] {
+  width: 50px;
+  background-color: green;
+}
+
+[data-block="75"] {
+  width: 75px;
+  background-color: red;
+}
+
+[data-block="100"] {
+  width: 100px;
+  background-color: yellow;
+}
